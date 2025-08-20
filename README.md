@@ -15,6 +15,7 @@ Este é um projeto simples de uma aplicação **Mini-To-Do List** desenvolvida e
 
 ## Estrutura de pastas
 
+```
 todo-flask
   app
     init.py        # Cria o app e inicializa o banco
@@ -30,7 +31,7 @@ todo-flask
   requirements.txt # Dependências do projeto
   gitignore        # Arquivo de exclusão para Git
   README.md
-
+```
 
 
 ---
