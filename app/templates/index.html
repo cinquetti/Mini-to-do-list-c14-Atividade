@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Suas tarefas</h2>
+<ul>
+    {% for task in tasks %}
+        <li>
+            <form action="{{ url_for('main.toggle_task', task_id=task.id) }}" method="get" style="display:inline;">
+                <button type="submit">
+                    {% if task.done %}✅{% else %}⬜{% endif %}
+                </button>
+            </form>
+            {{ task.title }}
+            <a href="{{ url_for('main.delete_task', task_id=task.id) }}">❌</a>
+        </li>
+    {% else %}
+        <li>Nenhuma tarefa encontrada.</li>
+    {% endfor %}
+</ul>
+{% endblock %}

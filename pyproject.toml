@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mini-todo-flask"
+version = "0.1.0"
+description = "Uma aplicação simples de To-Do List com Flask"
+authors = [{ name = "Seu Nome" }]
+dependencies = [
+    "flask",
+    "flask_sqlalchemy"
+]
+
+[project.scripts]
+todo-app = "app.__init__:create_app"
