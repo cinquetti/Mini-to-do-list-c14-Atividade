@@ -15,22 +15,22 @@ Este é um projeto simples de uma aplicação **Mini-To-Do List** desenvolvida e
 
 ## Estrutura de pastas
 
-todo_flask/
-│
-├── app/
-│ ├── init.py # Cria o app e inicializa o banco
-│ ├── database.py # Instância única do SQLAlchemy
-│ ├── models.py # Modelos do banco (Task)
-│ └── routes.py # Rotas da aplicação
-│
-├── templates/
-│ └── index.html # Página principal da lista de tarefas
-│
-├── venv/ # Ambiente virtual (não versionar)
-├── run.py # Arquivo principal para rodar a aplicação
-├── requirements.txt # Dependências do projeto
-├── .gitignore
-└── README.md
+todo-flask
+  app
+    init.py        # Cria o app e inicializa o banco
+    database.py    # Instância única do SQLAlchemy
+    models.py      # Modelos do banco (Task)
+    routes.py      # Rotas da aplicação
+  templates
+    index.html     # Página principal da lista de tarefas
+    base.html    
+    add_task.html 
+  venv             # Ambiente virtual (não versionar)
+  run.py           # Arquivo principal para rodar a aplicação
+  requirements.txt # Dependências do projeto
+  gitignore        # Arquivo de exclusão para Git
+  README.md
+
 
 
 ---
@@ -41,46 +41,48 @@ todo_flask/
 
 ```bash
 python -m venv venv
-Ativar o ambiente virtual:
+```
+
+2. **Ativar o ambiente virtual:**
 
 No Git Bash / Linux / Mac:
 
-bash
-Copiar
-Editar
+```bash
 source venv/bin/activate
+```
+
 No Windows PowerShell:
 
-bash
-Copiar
-Editar
+```bash
 venv\Scripts\activate
-Instalar as dependências do projeto:
+```
 
-bash
-Copiar
-Editar
+3. **Instalar as dependências do projeto:**
+
+```bash
 pip install -r requirements.txt
+```
+
 O arquivo requirements.txt deve conter pelo menos:
 
-nginx
-Copiar
-Editar
+```bash
 Flask
 Flask-SQLAlchemy
-Execução da Aplicação
+```
+
+
+## Execução da Aplicação
+
 Rodar o projeto:
 
-bash
-Copiar
-Editar
+```bash
 python run.py
+```
+
 Abrir no navegador:
 
-cpp
-Copiar
-Editar
+```bash
 http://127.0.0.1:5000
-O banco SQLite (todo.db) será criado automaticamente na primeira execução.
+```
 
-Todas as tabelas definidas em models.py serão inicializadas sem precisar de comandos manuais no shell.
+O banco SQLite (todo.db) será criado automaticamente na primeira execução.
