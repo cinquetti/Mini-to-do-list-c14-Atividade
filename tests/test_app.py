@@ -32,7 +32,7 @@ def client(app):
 
 # ---------- TESTES POSITIVOS ----------
 def test_homepage_status_code(client):
-    response = client.get("")
+    response = client.get("/")
     assert response.status_code == 200
 
 
