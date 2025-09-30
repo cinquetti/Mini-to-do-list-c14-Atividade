@@ -14,7 +14,7 @@ def get_env_var(name, default=None, required=False):
 
 def main():
     # Pegar variáveis de ambiente
-    RECIPIENT = get_env_var("RECIPIENT", required=True)
+    RECIPIENT = get_env_var("RECIPIENT", required=True) # Recipiente de Email Ajustado no github
     SMTP_HOST = get_env_var("SMTP_HOST", required=True)
     SMTP_PORT = get_env_var("SMTP_PORT", "587")
     SMTP_USER = get_env_var("SMTP_USER", default=None)
